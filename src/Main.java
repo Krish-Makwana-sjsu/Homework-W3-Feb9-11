@@ -61,8 +61,8 @@ public class Main {
     public static void maxHeapify(WordFreq[] arr, int n, int i) {
 
         int largest=i;          // initializing largest as the current index
-        int left=2*i+1;         // calculating the index of the left child
-        int right=2*i+2;        // calculating the index of the right child
+        int left=(2*i)+1;         // calculating the index of the left child
+        int right=(2*i)+2;        // calculating the index of the right child
 
         // Comparing the frequency of the left child with the largest and updating the largest if necessary
         if(left<n && arr[left].frequency>arr[largest].frequency) {
@@ -107,8 +107,8 @@ public class Main {
         buildMaxHeap(arr);
 
         // Printing the word and frequency of each wordFreq object in the array after building the max heap
-        for(var WordFreq: arr) {
-            System.out.println(WordFreq.word+ ": " +WordFreq.frequency);
+        for(var x: arr) {
+            System.out.println(x.word+ " : " +x.frequency);
         }
 
 
